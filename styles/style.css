@@ -1,132 +1,210 @@
-/*
-Colors:
-
-Text: 1A1A1A
-Green: #00B172
-White: #FFF
-
-*/
-
 html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header {
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    height: 10vh;
+@media (max-width: 767px) {
+    header {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 10vh;
+    }
+    .navbar a {
+        text-align: center;
+        color: black;
+        text-decoration: none;
+        padding: 10px;
+    }
+    .navbar a:hover {
+        color: #00B172;
+    }
+    .logo {
+        width: 150px;
+        margin: 10%;
+    }
+    .hero {
+        height: 50vh;
+        background-image: url("../images/landing.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 5vh;
+        color: white;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .iconos {
+        margin-top: 5vh;
+        text-align: center;
+    }
+    .iconos p {
+        margin-left: 5vh;
+        margin-right: 5vh;
+    }
+    .iconos h2 {
+        font-size: 250%;
+        text-decoration: underline solid #00B172 10%;
+        text-underline-offset: 30%;
+    }
+    .contenidoIconos {
+        margin-top: 5vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .contenidoIconos h3 {
+        color: #00B172;
+        font-size: 150%;
+    }
+    .iconos img {
+        width: 15%;
+    }
+    .verde {
+        background-color: #00B172;
+        background-image: url("../images/spotify-icon-white.png");
+        background-repeat: no-repeat;
+        background-position: center 2vh;
+        background-size: 25%;
+        color: white;
+        margin-top: 5vh;
+    }
+    .verdeTexto {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .verde h2 {
+        margin-top: 15vh;
+        font-size: 200%;
+        text-decoration: underline solid white;
+        text-underline-offset: 30%;
+        line-height: 6vh;
+    }
+    .verde p {
+        margin-left: 3vh;
+        margin-right: 3vh;
+    }
+    .verde img {
+        width: 60%;
+    }
+    .verdeFoto {
+        display: flex;
+        justify-content: center;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
 }
 
-.navbar {
-    display: flex;
-    overflow: auto;
-    margin: 5%;
-}
-
-.navbar a {
-    color: black;
-    text-decoration: none;
-    padding: 10px;
-}
-
-.navbar a:hover {
-    color: #00B172;
-}
-
-.logo {
-    width: 150px;
-    margin: 10%;
-}
-
-.hero {
-    height: 100vh;
-    background-image: url("../images/landing.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: -10vh;
-    color: white;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.hero h1 {
-    font-size: 450%;
-}
-
-.hero p {
-    font-size: 150%;
-}
-
-.iconos {
-    margin-top: 5vh;
-    height: 50vh;
-    text-align: center;
-}
-
-.iconos h2 {
-    font-size: 250%;
-    text-decoration: underline solid #00B172 10%;
-    text-underline-offset: 30%;
-}
-
-.contenidoIconos {
-    margin-top: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-}
-
-.contenidoIconos h3 {
-    color: #00B172;
-    font-size: 150%;
-}
-
-.iconos img {
-    width: 15%;
-}
-
-.verde {
-    height: 90vh;
-    background-color: #00B172;
-    background-image: url("../images/spotify-icon-white.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 5%;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.verdeTexto {
-    display: flex;
-    flex-direction: column;
-}
-
-.verde h2 {
-    font-size: 200%;
-    text-decoration: underline solid white;
-    text-underline-offset: 30%;
-}
-
-.verde p {
-    width: 50%;
-}
-
-.verde img {
-    width: 50%;
-}
-
-.verdeFoto {
-    display: flex;
-    justify-content: center;
+@media (min-width: 768px) {
+    header {
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        height: 10vh;
+    }
+    .navbar {
+        display: flex;
+        overflow: auto;
+        margin: 5%;
+    }
+    .navbar a {
+        color: black;
+        text-decoration: none;
+        padding: 10px;
+    }
+    .navbar a:hover {
+        color: #00B172;
+    }
+    .logo {
+        width: 150px;
+        margin: 10%;
+    }
+    .hero {
+        height: 100vh;
+        background-image: url("../images/landing.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: -10vh;
+        color: white;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .hero h1 {
+        font-size: 450%;
+    }
+    .hero p {
+        font-size: 150%;
+    }
+    .iconos {
+        margin-top: 5vh;
+        height: 50vh;
+        text-align: center;
+    }
+    .iconos h2 {
+        font-size: 250%;
+        text-decoration: underline solid #00B172 10%;
+        text-underline-offset: 30%;
+    }
+    .contenidoIconos {
+        margin-top: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .contenidoIconos h3 {
+        color: #00B172;
+        font-size: 150%;
+    }
+    .iconos img {
+        width: 15%;
+    }
+    .verde {
+        background-color: #00B172;
+        background-image: url("../images/spotify-icon-white.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 5%;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+    .verdeTexto {
+        display: flex;
+        flex-direction: column;
+        margin-left: 5vh;
+    }
+    .verde h2 {
+        line-height: 5vh;
+        font-size: 200%;
+        text-decoration: underline solid white;
+        text-underline-offset: 30%;
+    }
+    .verde p {
+        width: 50%;
+        text-align: justify;
+    }
+    .verde img {
+        width: 55%;
+    }
+    .verdeFoto {
+        display: flex;
+        justify-content: center;
+        margin-right: 5vh;
+    }
 }
